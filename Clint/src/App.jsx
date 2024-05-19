@@ -67,7 +67,7 @@ const App = () => {
               </div>
             </div>) :
             (<div className='w-screen h-screen  flex justify-center items-center gap-2'>
-              <input type="text" value={username} onChange={(e) => setUserName(e.target.value)} name='' id='' className='text-center px-3 py-2 outline-none border-2 rounded-md' />
+              <input type="text" value={username} onChange={(e) => setUserName(e.target.value)} name='' id='' className='text-center px-3 py-2 outline-none border-2 rounded-md' placeholder='Enter User Name' />
               <button type="submit" onClick={() => {
                 !username == "" && setChatActive(true)
               }} className='bg-green-500 text-white px-3 py-2 rounded-md font-bold'>Start Chat</button>
