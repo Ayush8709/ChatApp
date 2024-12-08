@@ -18,7 +18,7 @@ const io = new Server(server, {
 });
 
 io.on('connection',(socket)=>{
-    // console.log(`a user connected ${socket.id}` );
+    console.log(`a user connected ${socket.id}` );
 
     socket.on('send-message', (message)=>{
         //brodcast the recevied message to all the connected user
@@ -27,7 +27,7 @@ io.on('connection',(socket)=>{
     })
 
     socket.on('disconnect',()=>{
-        // console.log("User Disconnected");
+        console.log("User Disconnected");
     })
 })
 

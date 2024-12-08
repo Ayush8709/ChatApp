@@ -9,6 +9,7 @@ const App = () => {
   const [messages, setMessages] = useState([]);
   const [newMessage, setNewMessage] = useState('');
 
+
   useEffect(() => {
     // Listen for incoming messages
     socket.on('recevied-message', (message) => {
